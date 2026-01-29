@@ -18,15 +18,15 @@ a {
 }
 /* Layout dùng chung */
 .container {
+    width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
-
 }
+
 /* Header & Navigation */
 .header {
     border-bottom: 2px solid #000;
-    background-color: #c95555;
+    background-color: #6F4E37;
     position: sticky;
     top: 0;
 }
@@ -41,12 +41,14 @@ a {
 .logo {
     font-size: 22px;
     font-weight: bold;
+    color: #F5E6D3;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
     gap: 20px;
+    color: #F5E6D3;
 }
 
 .nav-list a {
@@ -55,60 +57,67 @@ a {
 
 .nav-list a:hover {
     text-decoration: underline;
+    color: #ffd27f;
 }
 
 /* Home section */
 .hero {
-    padding: 40px 0 20px 0;
-    background-color: #ab3535;
+    padding: 20px 10px;
+    background-color: #8B5A2B;
 }
 .hero h2 {
     font-size: 40px;
     margin-bottom: 10px;
-    color:#f0e9e9;
+    color:#FFF3E6;
 }
 
 .hero p {
-    color: #dbd3d4;
-    height: 30px
-}
-
-/* đường kẻ đỏ như trong hình */
-.hero::after {
-    content: "";
-    display: block;
-    margin-top: 15px;
-    border-bottom: 3px solid #8b0000;
+    color: #F1E0C6;
+    margin-bottom: 10px;
 }
 
 /* Section 2 card */
 .features {
     padding: 60px 0;
-    background-color: #e6bf8a;
+    background-color: #EFE2D0;
     height: auto;
+    width: 100%;
 }
 
 .features-grid {
     display: flex;
-    gap: 60px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Card */
 .feature-card {
-    width: 500px;
-    min-height: 260px;
-    border: 2px solid #8b5a2b;
-    border-radius: 8px;
+    width: 35%;
+    max-width: 100%;
+    height: 14em;
+    border: 2px solid #9f5b42;
+    border-radius: 12px;
     padding: 25px;
     text-align: center;
-    background-color: #9c5c5c;
+    background-color: #9a6246;
+    margin: 0 auto;
+
+    margin-bottom: 60px ;
+    gap: 50px;
 }
+
+@media (max-width: 768px) {
+    .feature-card {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
 
 .feature-card h3 {
     font-size: 30px;
-    margin-bottom: 15px;
-    color: #ebbd36;
+    color: #ffcc66;
+    text-align: center;
 }
 
 .feature-card p {
@@ -120,14 +129,14 @@ a {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid #c1c722;
+    border: 2px solid #c3970a;
     border-radius: 20px;
     font-weight: 500;
 }
 
 .btn:hover {
-    background-color: #dfe619;
-    color: #5b5c3e;
+    background-color: #a8914c;
+    color: #372915;
 }
 
 /* Footer */
@@ -140,3 +149,16 @@ a {
 }
 
 
+.additional {
+    width: 80%;
+    max-width: 100%;
+    height: 1000px;
+    border: 2px solid #9f5b42;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    background-color: #9a6246;
+    margin: 0 auto;
+    margin-bottom: 60px ;
+    gap: 50px;
+}
