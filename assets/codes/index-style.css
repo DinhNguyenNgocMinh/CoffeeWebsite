@@ -1,0 +1,142 @@
+/* Reset & base style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Layout dùng chung */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+/* Header & Navigation */
+.header {
+    border-bottom: 2px solid #000;
+    background-color: #c95555;
+    position: sticky;
+    top: 0;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* Home section */
+.hero {
+    padding: 40px 0 20px 0;
+    background-color: #ab3535;
+}
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color:#f0e9e9;
+}
+
+.hero p {
+    color: #dbd3d4;
+    height: 30px
+}
+
+/* đường kẻ đỏ như trong hình */
+.hero::after {
+    content: "";
+    display: block;
+    margin-top: 15px;
+    border-bottom: 3px solid #8b0000;
+}
+
+/* Section 2 card */
+.features {
+    padding: 60px 0;
+    background-color: #e6bf8a;
+    height: auto;
+}
+
+.features-grid {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+/* Card */
+.feature-card {
+    width: 500px;
+    min-height: 260px;
+    border: 2px solid #8b5a2b;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    background-color: #9c5c5c;
+}
+
+.feature-card h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ebbd36;
+}
+
+.feature-card p {
+    color: #d1c2c2;
+    margin-bottom: 25px;
+}
+
+/* Button trong card */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #c1c722;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #dfe619;
+    color: #5b5c3e;
+}
+
+/* Footer */
+.footer {
+    border-top: 2px solid #000;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+
