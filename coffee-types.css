@@ -71,7 +71,7 @@ a {
 
 .hero p {
     color: #dbd3d4;
-    height: 30px
+    margin-bottom: 10px;
 }
 
 /* Section 2 card */
@@ -90,8 +90,8 @@ a {
 
 /* Card */
 .coffee-types {
-    width: 85%;
-    min-height: 350px;
+    width: 100%;
+    max-width: 100;
     height: auto;
     border: 2px solid #8b5a2b;
     border-radius: 12px;
@@ -101,6 +101,20 @@ a {
     margin: 0 auto;
     display: flex;
     margin-bottom: 60px ;
+    gap: 32px;
+}
+
+@media (max-width: 768px) {
+    .coffee-types {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .coffee-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
 .coffee-text {
     flex: 1;
@@ -116,8 +130,8 @@ a {
 .coffee-image img {
     max-width: 100%;
     height: auto;
+    display: block;
     border-radius: 8px;
-    width: 100%;
 }
 .coffee-title {
     font-size: 30px;
@@ -125,15 +139,21 @@ a {
     text-align: center;
 }
 
-
+.coffee-attribute {
+    padding-left: 5%;
+}
 .coffee-attribute h4 {
     color: #deac97;
     font-size: 20px;
 }
 
+.coffee-attribute ul {
+    padding-left: 0;
+    list-style: none;
+}
+
 .coffee-attribute li {
-    color: #e0dad7;
-    padding-left: 50px;
+    padding-left: 5%;
     list-style: none;
 }
 .coffee-attribute p {
